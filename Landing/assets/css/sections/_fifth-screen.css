@@ -1,0 +1,123 @@
+.fifth-screen{
+  @apply bg-[#FFFFFF] [@media(max-width:767px)]:bg-[#F7F7F7] sm:py-[55px] xl:pt-[70px] xl:pb-[105px] md:pb-[100px];
+}
+.fifth-screen .container{
+  @apply text-center flex flex-col justify-center items-baseline [@media(max-width:767px)]:items-center [@media(max-width:600px)]:items-center md:gap-[40px] md:flex-row lg:justify-between md:text-left;
+}
+.fifth-screen .description {
+  @apply relative  z-10 [@media(max-width:470px)]:w-[65%] [@media(max-width:600px)]:w-[50%] [@media(max-width:767px)]:w-[400px] md:w-[335px] xl:w-[470px]; 
+}
+.fifth-screen .description .title{
+  @apply [@media(max-width:470px)]:mb-[10px] md:w-[335px] xl:w-[380px] md:text-[23px] xl:text-[25px] lg:leading-[40px] tracking-[.05em] font-bold
+}
+.fifth-screen .title {
+  @apply text-[16px] text-[#5C4A4A] font-bold leading-[25px] tracking-[.08em]; 
+}
+
+.fifth-screen .text {
+  @apply w-full md:w-[330px] xl:w-full
+}
+.fifth-screen .text-desktop {
+  @apply [@media(max-width:600px)]:block md:hidden xl:block [@media(max-width:767px)]:mt-[45px]
+}
+.fifth-screen .text-tablet {
+  @apply hidden md:block lg:block xl:hidden md:mt-[47px] relative z-50;
+}
+.fifth-screen .text p {
+  @apply [@media(max-width:470px)]:text-center text-[#5C4A4A] text-[14px] leading-[25px] lg:text-[17px]  xl:text-[20px] lg:leading-[27px] lg:whitespace-pre-line tracking-[.05em] font-medium text-justify; 
+}
+
+.form-wrap{
+  @apply relative z-10 [@media(max-width:470px)]:px-9;
+}
+.fifth-screen .form-container{
+  @apply flex flex-col [@media(max-width:470px)]:pt-[30px] sm:!w-[300px] [@media(max-width:767px)]:!w-[400px] pt-[78px] lg:!w-[404px]  xl:!w-[590px]  md:before:bg-[#F0F0F0] before:absolute relative before:w-full before:h-full before:top-0 before:left-0 before:blur-[113.5px] before:z-0 ;
+}
+.field{
+  @apply relative shadow-[0px_1px_2px_rgba(0,0,0,.3)];
+}
+.field input {
+  @apply block text-[15px] text-[#5C4A4A] w-full py-[15px] px-[14px] [@media(max-width:470px)]:p-[6px_0px_6px_14px] [@media(max-width:470px)]:placeholder:text-[12px] [@media(max-width:470px)]:placeholder:leading-[12px] placeholder:leading-none placeholder:text-[12px] placeholder:text-[#867878] rounded-[3px] lg:text-[20px] lg:h-[45px] lg:font-semibold lg:placeholder:text-[17px] xl:placeholder:text-[20px] lg:placeholder:font-normal placeholder:tracking-[.08em] tracking-[.08em] outline-none;
+}
+.field-wrap{
+  @apply sm:pb-[33px] md:pb-[33px] lg:pb-[32px] box-border relative;
+}
+.field-wrap .pristine-error {
+  @apply absolute bottom-[10px] text-orange font-medium text-[12px] pl-[15px] md:text-[15px] xl:text-[17px] tracking-[.08em];
+}
+.field-required{
+  @apply after:block after:absolute after:bg-[url(../../img/required-icon.png)] after:bg-cover after:w-[9px] after:h-[9px] after:right-[-13px] after:top-2/4 after:-translate-y-2/4;
+}
+
+.field-message textarea {
+  @apply text-[#5C4A4A] resize-none w-full p-[9px] h-[128px] [@media(max-width:470px)]:p-[8px_14px] [@media(max-width:470px)]:placeholder:text-[12px] placeholder:text-[12px] placeholder:text-[#867878] rounded-[3px]  lg:font-semibold xl:placeholder:text-[20px] lg:placeholder:font-normal placeholder:tracking-[.08em] tracking-[.08em] lg:placeholder:text-[17px]  lg:text-[20px] shadow-[0px_1px_2px_rgba(0,0,0,.3)] outline-none;
+}
+.button-wrap button {
+  @apply font-semibold tracking-[.03em] bg-orange text-white capitalize w-full text-[13px] h-[32px] rounded-[2px] lg:text-[17px] xl:text-[20px] lg:py-[7px] xl:py-[5px] lg:h-auto;
+}
+.footer{
+  @apply relative z-10;
+}
+.footer-container{
+  @apply [@media(max-width:470px)]:!p-[8px_30px_2px_30px] [@media(max-width:600px)]:!p-[13px_30px] bg-black xl:p-[24px_20px_50px_20px] lg:p-[46px_0px_44px_0px] [@media(max-width:757px)]:p-[46px_20px_44px_20px] md:p-[46px_20px_44px_20px]
+}
+.footer-container .container {
+  @apply md:max-w-[844px] xl:max-w-[1230px];
+}
+.footer-top{
+  @apply flex flex-row justify-between;
+}
+.footer-logo{
+  @apply [@media(max-width:470px)]:mb-[3px] [@media(max-width:767px)]:mb-[13px] [@media(max-width:600px)]:mb-[13px] md:mb-[40px]
+}
+.footer-logo img{
+  @apply [@media(max-width:470px)]:w-[38px] [@media(max-width:767px)]:w-[50px] md:w-[60px] lg:w-[87px] xl:w-[87px]
+}
+.footer-logo--description {
+  @apply leading-[1em] [@media(max-width:470px)]:leading-[.7em] inline-block text-[11px] font-medium md:text-[14px] lg:text-[16px] xl:text-[20px] [@media(max-width:470px)]:mt-[5px] md:mt-[10px]
+}
+.footer-top .right{
+@apply w-[22%] [@media(max-width:470px)]:w-[35%] [@media(max-width:600px)]:w-2/4 md:w-2/4 xl:w-2/4;
+}
+.footer-top .right .footer-menu {
+  @apply hidden  md:block lg:block 
+}
+.footer-top .to-top--btn a{
+  @apply block w-[22px] [@media(max-width:470px)]:w-[22px] [@media(max-width:470px)]:h-[22px] [@media(max-width:767px)]:w-[30px] md:w-[40px] lg:w-full
+}
+.footer-top .to-top--btn a svg {
+  @apply w-[22px] h-[22px] [@media(max-width:470px)]:w-[22px] [@media(max-width:470px)]:h-[22px] [@media(max-width:767px)]:w-[30px] [@media(max-width:767px)]:h-[30px] md:w-[40px] md:h-[40px] xl:w-[62px] xl:h-[62px] lg:w-[45px] lg:h-[45px]
+}
+.footer-top .to-top--btn {
+  @apply relative /*[@media(max-width:470px)]:pl-[26px]*/ [@media(max-width:600px)]:top-[10px] xl:top-[15px] lg:top-0;
+}
+.footer-menu--list{
+  @apply flex flex-col justify-end text-right
+}
+.footer-menu--list-item{
+  @apply text-[17px] lg:mb-[13px] xl:text-[21px] first-of-type:font-semibold
+}
+.footer-bottom {
+  @apply flex justify-between items-end
+}
+.footer-bottom--copyright{
+  @apply [@media(max-width:767px)]:text-[14px]  [@media(max-width:600px)]:!text-[11px] [@media(max-width:470px)]:!text-[7px]   md:text-[14px] xl:text-[16px] font-medium;
+}
+.footer-bottom .socials{
+  @apply lg:mt-[21px] lg:flex lg:gap-[90px]
+}
+.footer-bottom .socials a {
+  @apply [@media(max-width:470px)]:text-[9px] [@media(max-width:470px)]:pl-[15px] [@media(max-width:600px)]:text-[11px] font-medium md:text-[15px] xl:text-[16px] lg:pl-[56px];
+}
+.footer-bottom .socials .linkedin{
+  @apply mr-0 [@media(max-width:470px)]:mr-[18px] [@media(max-width:767px)]:mr-[20px] md:mr-[30px] lg:mr-0
+}
+.footer-bottom .socials .linkedin:before{
+  @apply w-[11px] h-[11px] bg-contain md:w-[30px] md:h-[30px]
+}
+.footer-bottom .socials .mail:before {
+  @apply w-[13px] h-[9px] bg-contain md:w-[29px] md:h-[19px]
+}
+.footer-bottom .right {
+  @apply mb-0 lg:mb-[10px]
+}

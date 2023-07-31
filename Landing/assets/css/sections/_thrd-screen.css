@@ -1,0 +1,42 @@
+.thrd-screen{
+  @apply bg-black pt-[35px] md:pt-[80px];
+}
+.thrd-screen .container {
+  @apply md:px-6 lg:max-w-[844px] xl:max-w-[1230px];
+}
+.thrd-screen .items{
+  @apply [@media(max-width:470px)]:gap-x-[47px] [@media(max-width:470px)]:px-[30px] flex justify-center items-center flex-col  sm:gap-y-[45px] md:gap-y-[84px];
+}
+.thrd-screen .content .title-main {
+  @apply text-[25px] font-semibold text-light-greeen text-center md:text-left lg:text-left lg:mb-[20px] md:text-[26px] xl:text-[39px] tracking-[.08em]; 
+}
+.thrd-screen .content .title-main p {
+  @apply first-letter:text-white first-letter:text-[45px] first-letter:tracking-[.03em] inline-block md:first-letter:text-[60px] xl:first-letter:text-[70px] tracking-[.17em]; 
+}
+.thrd-screen .item {
+@apply w-[302px] flex flex-col md:flex-row justify-center items-center [@media(max-width:470px)]:w-full [@media(max-width:600px)]:w-[90%] sm:first-of-type:mt-[22px] sm:last-of-type:mb-[50px] lg:last-of-type:mb-[83px] md:w-full lg:flex-row lg:text-left md:odd:flex-row-reverse md:justify-between md:gap-[40px] lg:gap-[84px];
+}
+.thrd-screen .item-text{
+  @apply md:w-[65%] xl:w-[65%];
+}
+.thrd-screen .item-text:nth-of-type(3) {
+  @apply w-full lg:w-[90%] xl:w-full
+}
+.thrd-screen .item .title{
+  @apply text-[17px] font-semibold sm:mb-[0px] lg:mb-[10px] lg:text-[26px] xl:text-[32px] pb-[22px] tracking-[.08em];
+}
+.thrd-screen .item .title span {
+  @apply text-[#9B9D9B];
+}
+.thrd-screen .item .description-desktop {
+  @apply hidden [@media(max-width:600px)]:block xl:block;
+}
+.thrd-screen .item .description-tablet {
+  @apply xl:hidden lg:block md:block sm:hidden
+}
+.thrd-screen .item .description p {
+  @apply whitespace-pre-line text-[14px] font-medium lg:text-[17px] xl:text-[20px] xl:tracking-[.03em];
+}
+.thrd-screen .item .img>img {
+  @apply [@media(max-width:470px)]:mt-[14px] w-[115px] [@media(max-width:600px)]:w-[115px] [@media(max-width:600px)]:mt-[20px] md:w-[180px] lg:w-full;
+}

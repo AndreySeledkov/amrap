@@ -1,0 +1,19 @@
+
+@import './sections/_head.css';
+@import './sections/_fst-screen.css';
+@import './sections/_scnd-screen.css';
+@import './sections/_thrd-screen.css';
+@import './sections/_frth-screen.css';
+@import './sections/_fifth-screen.css';
+@import "./slick.css";
+@tailwind base;
+@tailwind components;
+
+@tailwind utilities;
+
+body{
+  @apply text-white font-main bg-[#F7F7F7];
+}
+.b-container {
+  @apply container;
+}

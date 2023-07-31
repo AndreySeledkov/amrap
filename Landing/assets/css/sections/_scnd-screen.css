@@ -1,0 +1,45 @@
+.scnd-screen .content {
+  @apply py-[50px] flex [@media(max-width:600px)]:flex-col [@media(max-width:600px)]:gap-y-[40px] text-center   md:flex-row md:pb-[106px] md:pt-[92px]  [@media(max-width:767px)]:justify-center md:justify-center lg:items-start [@media(max-width:767px)]:gap-[35px] md:gap-[50px] lg:gap-[82px] xl:gap-[150px] xl:py-[88px];
+}
+.scnd-screen .content{
+  @apply  lg:max-w-[870px] xl:max-w-max;
+}
+.scnd-screen .title {
+  @apply tracking-[.06em] sm:text-[17px] text-orange font-semibold [@media(max-width:600px)]:text-[21px] md:text-[21px]  lg:text-[26px] xl:text-[39px];
+}
+.scnd-screen .title-mobile{
+  @apply sm:block [@media(max-width:470px)]:text-[17px] [@media(max-width:470px)]:font-semibold mb-[21px] md:hidden lg:hidden
+}
+.scnd-screen .title-desktop{
+  @apply sm:hidden md:block lg:block md:mb-[40px] xl:mb-[27px] whitespace-pre-line;
+}
+.scnd-screen .title-desktop span {
+  @apply block lg:leading-[36px] xl:leading-[47px];
+}
+.scnd-screen .text{
+  @apply text-[#2E2020B8] whitespace-pre-line sm:w-[224px] sm:m-[0_auto] [@media(max-width:600px)]:w-[90%] md:m-0 md:w-full;
+}
+.scnd-screen .text-desktop{
+  @apply hidden xl:block
+}
+.scnd-screen .text-tablet{
+  @apply [@media(max-width:470px)]:text-[17px] xl:hidden lg:block;
+}
+.scnd-screen .image {
+  @apply  flex justify-center xl:my-0;
+}
+.scnd-screen .pen-mobile{
+  @apply [@media(max-width:600px)]:block  hidden;
+}
+.scnd-screen .pen-desktop{
+  @apply [@media(max-width:600px)]:hidden md:block [@media(max-width:767px)]:w-[41px] md:w-[41px] lg:w-[58px] xl:w-[47px];
+}
+.scnd-screen .content .left-part{
+  @apply [@media(max-width:600px)]:!text-center [@media(max-width:767px)]:text-right md:text-right lg:w-[491px] xl:w-[373px]
+}
+.scnd-screen .content .right-part{
+  @apply  [@media(max-width:767px)]:text-left [@media(max-width:600px)]:!text-center md:text-left lg:w-[460px] xl:w-[485px]
+}
+.scnd-screen .content .text {
+  @apply font-medium tracking-[.08em] lg:leading-[24px] lg:m-0 [@media(max-width:767px)]:text-[14px] [@media(max-width:767px)]:w-full md:text-[14px] lg:text-[17px] lg:w-full xl:text-[20px]
+}

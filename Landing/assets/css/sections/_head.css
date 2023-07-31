@@ -1,0 +1,42 @@
+.head {
+  @apply fixed [@media(max-width:600px)]:h-[80px] sm:border-b [@media(max-width:600px)]:pt-[5px] md:h-[100px] w-full bg-black bg-opacity-60  py-[13px] pr-[42px] pl-[28px] z-40 lg:border-b xl:pt-[14px] xl:pb-[23px];
+}
+.head.scroll{
+  @apply bg-black opacity-100;
+}
+.head-content{
+  @apply flex justify-between items-center flex-row flex-wrap lg:flex-nowrap;
+}
+.logotype {
+  @apply w-[48px] order-1 lg:order-1 md:w-[87px];
+}
+.navigation{
+  @apply  flex justify-center order-3 md:w-auto mt-[2px] sm:order-2  [@meida(max-width:836px)]:max-w-[500px] xl:max-w-[886px]   [@media(max-width:1365px)]:max-w-[678px] [@media(max-width:600px)]:w-full md:order-2   [@media(max-width:767px)]:justify-end [@media(max-width:655px)]:order-3;
+}
+.contact {
+  @apply order-2 lg:order-3
+}
+.contact a {
+  @apply rounded-sm capitalize block bg-light-greeen font-semibold px-5 py-2 text-[13px] tracking-[.03em] leading-4 lg:text-[17px] lg:px-[66px] lg:py-[7px];
+}
+.navigation_list {
+  @apply flex flex-row w-full justify-between [@media(max-width:450px)]:w-full [@media(max-width:400px)]:gap-0 [@media(max-width:600px)]:w-auto [@media(max-width:600px)]:gap-[40px] [@media(max-width:767px)]:gap-[30px] md:gap-[40px] xl:gap-[86px] lg:mt-0 ;
+}
+.navigation_list__item_link {
+  @apply block  text-[#ADADAD]  tracking-[.03em] font-semibold transition-all relative before:block before:absolute sm:before:-bottom-[13px] [@media(max-width:767px)]:before:-bottom-[24px] [@media(min-width:761px)]:before:-bottom-[24px] [@media(max-width:655px)]:before:-bottom-[13px] md:before:-bottom-[41px] xl:before:-bottom-[34px] before:w-full before:h-[2px] before:bg-transparent md:leading-none md:text-[17px] xl:text-[20px]  [@media(max-width:959px)]:text-[17px] [@media(max-width:470px)]:!text-[13px] [@media(max-width:767px)]:!text-[14px] before:transition-all  hover:before:shadow-[0px_0px_5px_#FFFFFF] hover:before:bg-white  hover:lg:before:h-[3px] hover:md:before:-bottom-[41px] hover:xl:before:-bottom-[37px] hover:before:-bottom-[13px]; 
+}
+.navigation_list__item {
+  @apply flex items-center
+}
+.navigation_list__item.contact{
+  @apply [@media(max-width:600px)]:hidden
+}
+.navigation_list__item_link.active {
+  @apply text-white;
+}
+.navigation_list__item_link.scroll-active {
+  @apply text-white;
+}
+.contact-mobile{
+  @apply hidden [@media(max-width:600px)]:block
+}
